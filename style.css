@@ -36,6 +36,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: auto;
 }
 
 .navbar p {
@@ -48,14 +49,14 @@ p {
   opacity: 0.9;
 }
 
-#mission {
+#stay {
   display: flex;
   height: 300px;
   /* background-image: url(""); */
   padding-top: 35px;
 }
 
-#mission .content {
+#stay .content {
   margin: auto;
   background-color: white;
   width: 100%;
