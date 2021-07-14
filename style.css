@@ -3,7 +3,7 @@ body {
   font-family: 'Lexend Mega', sans-serif;
   color: black;
   background-color: white;
-  font-size: 22px;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -11,6 +11,7 @@ a {
   color: black;
 }
 
+h1,
 h2,
 h3,
 h4,
@@ -22,14 +23,19 @@ p {
 .header {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  background-color: rgb(138, 184, 223);
+  align-items: baseline;
+  color: white;
+  width: 100%;
+  height: 850px;
+  background-image: url(https://images.pexels.com/photos/2516860/pexels-photo-2516860.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: antiquewhite 30px solid;
 }
 
-.header img {
-  width: 75px;
-  height: auto;
-  margin: 10px 10px 10px 10px;
+.header h1 {
+  padding: 20px;
 }
 
 .navbar {
@@ -37,21 +43,27 @@ p {
   flex-direction: row;
   align-items: center;
   margin-left: auto;
+  padding-right: 15px;
 }
 
 .navbar p {
   display: inline-block;
-  padding: 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.navbar a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .main {
   padding-top: 35px;
-  opacity: 0.9;
+  display: flex;
 }
 
 #stay {
   display: flex;
-  height: 300px;
   /* background-image: url(""); */
   padding-top: 35px;
 }
@@ -62,10 +74,26 @@ p {
   width: 100%;
 }
 
-#about {
-  min-height: 500px;
-  margin: auto;
-  padding-top: 70px;
+.searchbar {
+  position: relative;
+}
+
+.search {
+  height: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding-right: 5px;
+  width: 400px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  outline: 0;
+  background-color: #fdfdfd;
+}
+
+.search:hover,
+.search:focus {
+  border: 1.5px solid #020f2c;
+  background-color: white;
 }
 
 .locations {
@@ -96,7 +124,7 @@ p {
   text-align: center;
 }
 
-.our-team {
+.docks {
   /* background-image: url(''); */
   padding-top: 70px;
   padding-bottom: 5px;
@@ -105,13 +133,19 @@ p {
   justify-content: center;
 }
 
-.teammate {
+#rent {
+  min-height: 500;
+  margin: auto;
+  padding-top: 35px;
+}
+
+.dock {
   padding: 5px;
   color: black;
   flex-basis: 280px;
 }
 
-.teammate img {
+.dock img {
   margin-left: auto;
   margin-right: auto;
   width: 200px;
