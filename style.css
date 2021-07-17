@@ -17,7 +17,7 @@ h3,
 h4,
 p {
   margin: 0;
-  padding: 10px;
+  text-align: left;
 }
 
 .header {
@@ -124,13 +124,13 @@ p {
   text-align: center;
 }
 
-.docks {
+.renterperks {
   /* background-image: url(''); */
-  padding-top: 70px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 150px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 #rent {
@@ -139,20 +139,40 @@ p {
   padding-top: 35px;
 }
 
-.dock {
+#rent h2 {
+  padding-left: 50px;
+}
+
+.renterperkssub {
   padding: 5px;
   color: black;
   flex-basis: 280px;
 }
 
-.dock img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: auto;
+.renterperkssub img {
+  margin: 5px;
+  width: auto;
+  max-width: 400px;
+  height: 300px;
+  border-radius: 3%;
 }
 
 .contact,
 .copyright {
-  padding-top: 20px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+footer {
+  background-color: lightgray;
+  position: absolute;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.contact h2 {
+  text-align: left;
+  padding-left: 0px;
+  margin-left: 0px;
 }
